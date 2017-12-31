@@ -2,7 +2,9 @@
 DEBUG = True
 
 # 域名设置
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = [
+    '127.0.0.1',
+]
 # mysql 设置
 DATABASES = {
 
