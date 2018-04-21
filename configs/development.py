@@ -6,8 +6,9 @@ from configs.default import *
 DEBUG = True
 
 DATABASES['default'].update(
-    {'PASSWORD': os.getenv('MYSQL_PASSWORD',),
-     'HOST': os.getenv('MYSQL_HOST','127.0.0.1')
+    {'PASSWORD': os.getenv('MYSQL_PASSWORD'),
+     'HOST': os.getenv('MYSQL_HOST')
      })
+
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
